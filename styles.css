@@ -29,6 +29,10 @@ h1 {
   font-weight: var(--fw-bold);
 }
 
+p {
+  margin: 0;
+}
+
 .btn {
   text-decoration: none;
 }
@@ -40,6 +44,12 @@ h1 {
   padding: 0.5em 1.2em;
   font-size: 1.2rem;
   font-weight: var(--fw-bold);
+  transition: 300ms;
+}
+
+.btn--outline:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
 }
 
 .btn--danger {
@@ -124,7 +134,6 @@ main {
 .main--stats {
   background-color: #ffffff;
   margin-top: 5em;
-  padding-bottom: 1em;
   display: flex;
   flex-direction: column;
   box-shadow: 0 15px 25px -15px rgba(245, 56, 56, 0.35);
@@ -157,11 +166,85 @@ main {
 }
 
 .container {
+  margin-top: 4em;
   display: flex;
+  text-align: center;
   flex-direction: column;
 }
 
 .feature {
   display: flex;
   margin-top: 1.2em;
+}
+
+.plans {
+  text-align: center;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.plan--header {
+  display: flex;
+  align-items: center;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+.plan--header img {
+  padding-bottom: 2em;
+  width: 50px;
+}
+
+.plan--header p {
+  margin-left: 1em;
+  font-size: 1.125rem;
+  color: var(--clr-titles);
+  font-weight: var(--fw-bold);
+}
+
+.plan--points {
+  text-align: left;
+  padding-left: 2em;
+}
+
+.plan--points p {
+  margin-bottom: 0.2em;
+}
+
+.plan--points span {
+  margin-left: 1em;
+}
+
+.plan--price {
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan--price p {
+  color: var(--clr-titles);
+  font-weight: var(--fw-bold);
+  margin-right: 2em;
+}
+
+.plan--price a {
+  font-size: 1rem;
+  border-width: 2px;
+}
+
+.map {
+  text-align: center;
+}
+
+.map img {
+  margin-top: 2em;
+  width: 100%;
 }
