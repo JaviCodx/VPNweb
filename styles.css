@@ -248,3 +248,15 @@ main {
   margin-top: 2em;
   width: 100%;
 }
+
+.main-carousel img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.carousel-cell {
+  width: 100%;
+
+  counter-increment: gallery-cell;
+}
