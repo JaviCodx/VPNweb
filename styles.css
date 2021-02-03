@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #f53838;
+  --clr-dark: #4f5665;
+  --clr-titles: #0b132a;
+  --clr-light: #f6f6f6;
+  --fw-normal: 400;
+  --fw-bold: 500;
+  --fw-black: 700;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: var(--clr-dark);
+  line-height: 1.6;
+  background-color: var(--clr-light);
+}
+
+h1 {
+  color: var(--clr-titles);
+  line-height: 1.6;
+  font-weight: var(--fw-bold);
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn--outline {
+  color: var(--clr-primary);
+  border-radius: 50px;
+  border: 1px solid var(--clr-primary);
+  padding: 0.5em 1.2em;
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+}
+
+.btn--danger {
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+  font-weight: var(--fw-black);
+  font-size: 1rem;
+  padding: 1.1em 4.5em;
+  border-radius: 10px;
+  box-shadow: 0 15px 15px -6px rgba(245, 56, 56, 0.35);
+}
+
+header {
+  color: var(--clr-dark);
+  text-align: center;
+}
+
+.logo {
+  margin-top: 1em;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: var(--fw-normal);
+  letter-spacing: 1px;
+  padding: 1em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+.nav__link:hover {
+  color: var(--clr-primary);
+}
+
+.login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign-in {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  padding: 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero--image {
+  width: 100%;
+}
+
+.hero__title {
+  font-size: 2rem;
+}
+
+.hero__title span {
+  font-weight: var(--fw-black);
+}
+
+.cta p {
+  margin-bottom: 3em;
+}
+
+.main--stats {
+  background-color: #ffffff;
+  margin-top: 5em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 25px -15px rgba(245, 56, 56, 0.35);
+}
+
+.stat {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2em;
+}
+
+.stats--logo {
+  width: 100px;
+  margin-right: 2em;
+}
+
+.stat p {
+  margin: 0;
+}
+
+.stat p:first-of-type {
+  font-size: 1.6rem;
+  font-weight: var(--fw-black);
+}
+
+.stat p:last-of-type {
+  font-size: 1.25rem;
+  font-weight: var(--fw-normal);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature {
+  display: flex;
+  margin-top: 1.2em;
+}
