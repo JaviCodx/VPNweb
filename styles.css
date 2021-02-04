@@ -350,7 +350,9 @@ main {
 }
 
 .footer--logo {
+  width: 150px;
   margin-bottom: 1.5em;
+  align-self: center;
 }
 
 .footer--icons {
