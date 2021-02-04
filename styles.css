@@ -203,8 +203,15 @@ main {
 }
 
 .plans {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin-top: 4em;
+}
+
+.plans--boxes {
+  display: flex;
+  flex-direction: column;
 }
 
 .plan {
@@ -342,6 +349,18 @@ main {
   margin-top: 1em;
 }
 
+.testimonials-carousel {
+  margin: 0 auto;
+
+  max-width: 1140px;
+}
+
+.testimonials-carousel .carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
 .subscribe {
   margin: 0 auto;
   margin-top: 5em;
@@ -394,6 +413,10 @@ main {
   .stat {
     margin-left: 0;
   }
+
+  .testimonials-carousel .carousel-cell {
+    width: 32.5%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -407,6 +430,11 @@ main {
   }
 
   .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .plans--boxes {
     flex-direction: row;
     justify-content: space-around;
   }
