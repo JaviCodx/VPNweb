@@ -134,21 +134,21 @@ main {
 .main--stats {
   background-color: #ffffff;
   margin-top: 5em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   display: flex;
   flex-direction: column;
   box-shadow: 0 15px 25px -15px rgba(245, 56, 56, 0.35);
 }
 
 .stat {
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   flex-direction: row;
-  margin-left: 2em;
+  margin-left: 4.5em;
 }
 
 .stats--logo {
-  width: 100px;
+  width: 50px;
   margin-right: 2em;
 }
 
@@ -157,12 +157,12 @@ main {
 }
 
 .stat p:first-of-type {
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   font-weight: var(--fw-black);
 }
 
 .stat p:last-of-type {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: var(--fw-normal);
 }
 
@@ -170,6 +170,11 @@ main {
   display: flex;
   text-align: center;
   flex-direction: column;
+}
+
+.section1--image {
+  margin-top: 2em;
+  width: 100%;
 }
 
 .features {
@@ -268,4 +273,86 @@ main {
   width: 100%;
 
   counter-increment: gallery-cell;
+}
+
+.testimonials {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.testimonial {
+  text-align: left;
+  margin-top: 2em;
+  padding: 1em 1em;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+}
+
+.testimonial--head {
+  display: flex;
+
+  align-items: center;
+}
+
+.testimonial--head h3 {
+  margin-bottom: 0;
+}
+
+.testimonial--profilepic {
+  display: inline;
+  margin-right: 1em;
+  padding-top: 1em;
+}
+
+.testimonial--rating {
+  margin-left: 2em;
+}
+
+.testimonial--rating::after {
+  content: url(./images/star.svg);
+  margin-left: 0.5em;
+}
+
+/* .testimonial--star {
+}
+
+.testimonial--star::before {
+  content: "4.5";
+} */
+
+.testimonial--body {
+  margin-top: 1em;
+}
+
+.subscribe {
+  margin-top: 5em;
+  padding: 1em;
+  padding-bottom: 3em;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 15px 15px -6px rgba(245, 56, 56, 0.35);
+}
+
+.subscribe--cta p {
+  margin-bottom: 2em;
+}
+
+.subscribe__title {
+  font-size: 1.6rem;
+}
+
+.footer {
+  margin-top: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--logo {
+  margin-bottom: 1.5em;
+}
+
+.footer--icons {
+  margin-top: 1em;
 }
