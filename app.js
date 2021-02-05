@@ -52,3 +52,12 @@ document.querySelector("#testimonials").addEventListener("click", (e) => {
     .querySelector(".testimonials")
     .scrollIntoView({ behavior: "smooth", block: "center" });
 });
+
+const floatButton = document.querySelector(".float");
+window.addEventListener("scroll", function (e) {
+  if (window.scrollY > 370) {
+    floatButton.classList.add("float-active");
+  } else {
+    floatButton.classList.remove("float-active");
+  }
+});
