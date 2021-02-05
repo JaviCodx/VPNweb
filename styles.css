@@ -508,7 +508,7 @@ main {
 
   .plan--header img {
     width: 60%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 
   .plans--boxes {
@@ -522,7 +522,8 @@ main {
 
   .plan--price p {
     margin: 0;
-    margin-bottom: 7em;
+    margin-bottom: 3em;
+    font-size: 1.5rem;
   }
 
   .plan--price a {

@@ -26,3 +26,29 @@ const navbarLinks = document.querySelector(".navbar--links ul");
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
+
+document.querySelector("#about").addEventListener("click", (e) => {
+  e.preventDefault();
+  document
+    .querySelector(".main--stats")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+document.querySelector("#features").addEventListener("click", (e) => {
+  e.preventDefault();
+  document
+    .querySelector(".section1--text")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+document.querySelector("#pricing").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".plans").scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector("#testimonials").addEventListener("click", (e) => {
+  e.preventDefault();
+  document
+    .querySelector(".testimonials")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+});
